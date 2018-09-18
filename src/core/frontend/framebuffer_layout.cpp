@@ -174,7 +174,7 @@ FramebufferLayout SideFrameLayout(unsigned width, unsigned height, bool swapped)
     return res;
 }
 
-FramebufferLayout CustomFrameLayout(unsigned width, unsigned height) {
+FramebufferLayout CustomFrameLayout(unsigned width, unsigned height, bool swapped) {
     ASSERT(width > 0);
     ASSERT(height > 0);
 
