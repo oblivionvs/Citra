@@ -187,8 +187,8 @@ FramebufferLayout CustomFrameLayout(unsigned width, unsigned height, bool swappe
         Settings::values.custom_bottom_left, Settings::values.custom_bottom_top,
         Settings::values.custom_bottom_right, Settings::values.custom_bottom_bottom};
 
-    res.top_screen = top_screen;
-    res.bottom_screen = bot_screen;
+    res.top_screen = swapped ? top_screen : bot_screen;
+    res.bottom_screen = swapped ? bot_screen : top_screen;
     return res;
 }
 } // namespace Layout
